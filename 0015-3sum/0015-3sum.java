@@ -20,7 +20,7 @@ class Solution {
             
             while(j < k){
                 if(sum == nums[j] + nums[k]){
-                    set.add(new ArrayList<>(Arrays.asList(nums[i], nums[j], nums[k])));
+                    set.add(Arrays.asList(nums[i], nums[j], nums[k]));
                     j++;
                     k--;
                 } else if (nums[j] + nums[k] > sum){
