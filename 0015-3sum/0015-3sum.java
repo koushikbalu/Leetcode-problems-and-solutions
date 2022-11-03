@@ -8,6 +8,12 @@ class Solution {
         Arrays.sort(nums);
         
         for(int i = 0; i < len - 2; i++){
+            
+             if (i > 0 && nums[i] == nums[i - 1]) {
+                // skip same result
+                continue;
+            }
+            
             sum = 0 - nums[i];
             j = i + 1;
             k = len - 1;
